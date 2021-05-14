@@ -1,0 +1,225 @@
+/* Tipografia */
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+/* Variables */
+:root{
+    /* ### Primary */
+
+    --Dark--Blue: hsl(233, 26%, 24%);
+    --Lime--Green: hsl(136, 65%, 51%);
+    --Bright--Cyan: hsl(192, 70%, 51%);
+
+    /* ### Neutral */
+
+    --Grayish--Blue: hsl(233, 8%, 62%);
+    --Light--Grayish--Blue: hsl(220, 16%, 96%);
+    --Very--Light--Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Public Sans', sans-serif;
+}
+body{
+    background-color: var(--Light--Grayish--Blue);
+    /* overflow-x: hidden; */
+}
+img{
+    width: 100%;
+}
+h1,h2,h3{
+    text-align: center;
+}
+p{
+    color: var(--Grayish--Blue);
+    text-align: center;
+    font-size: 1.59rem;
+    margin-bottom: 2rem;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header{
+    background-color: var(--Very--Light--Gray);
+}
+.nav{
+    background-color: var(--White);
+    position: sticky;
+    padding: 1.5rem 0;
+    top: 0;
+    z-index: 10;
+}
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo{
+    width: 15rem;
+}
+.menu__hamburger{
+    width: 3rem;
+}
+.hero__img img{
+    margin-top: -13rem;
+    position: relative;
+}
+.hero__img{
+    background-image: url(../images/bg-intro-mobile.svg);
+    background-size: cover;
+}
+.hero__info-title{
+    color: var(--Dark--Blue);
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+}
+.hero__btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding-bottom: 6rem;
+}
+.hero__btn-a{
+    padding: 1.6rem 3rem;
+    background-image: linear-gradient(to right, var(--Lime--Green), var(--Bright--Cyan));
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--Light--Grayish--Blue);
+    font-weight: 700;
+    border-radius: 3rem;
+}
+
+/* easebank */
+.easybank__title{
+    color: var(--Dark--Blue);
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+.easybank__list{
+    margin-top: 5rem;
+}
+.easybank__list-li{
+    list-style: none;
+}
+.easybank__list-ul{
+    padding: 0;
+}
+.easybank__list-item-img{
+    display: flex;
+    width: 7rem;
+    margin: auto;
+}
+.easybank__list-item-title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.easybank__list-item-paragraph{
+    font-size: 1.5rem;
+}
+/* articles */
+.articles__title{
+    color: var(--Dark--Blue);
+    font-size: 3.4rem;
+    font-weight: 500;
+    margin-top: 10rem;
+}
+.articles-list{
+    padding: 0;
+}
+.articles-list__li{
+    list-style: none;
+}
+.articles-list__item-img{
+    height: 20rem;
+    background-image: url(../images/image-currency.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3rem;
+}
+.articles-list__li:nth-child(2) .articles-list__item-img{
+    background-image: url(../images/image-restaurant.jpg);
+}
+.articles-list__li:nth-child(3) .articles-list__item-img{
+    background-image: url(../images/image-plane.jpg);
+}
+.articles-list__li:nth-child(4) .articles-list__item-img{
+    background-image: url(../images/image-confetti.jpg);
+}
+.articles__item-info{
+    margin: 0 3rem;
+}
+.articles-list__item-small{
+    font-size: 1.2rem;
+    color: var(--Grayish--Blue);
+}
+.articles-list__item-title{
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: left;
+}
+.articles-list__item-paragraph{
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+/* footer */
+.footer{
+    background-color: var(--Dark--Blue);
+}
+.footer__logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+.footer-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding-bottom: 6rem;
+}
+.footer-btn a{
+    padding: 1.6rem 3rem;
+    background-image: linear-gradient(to right, var(--Lime--Green), var(--Bright--Cyan));
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--Light--Grayish--Blue);
+    font-weight: 700;
+    border-radius: 3rem;  
+}
+.redes__list{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.redes__list-item{
+    list-style: none;
+    width: 3rem;
+    margin: 0 1rem;
+}
+.footer-links__ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-links__item{
+    list-style: none;
+    margin: 1rem 0;
+}
+.footer-links__item a{
+    color: var(--Grayish--Blue);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
